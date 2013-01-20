@@ -1,0 +1,464 @@
+/* line 5, /Users/goran/code/responsive.dev/sass/normalize.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 8, /Users/goran/code/responsive.dev/sass/normalize.sass */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 13, /Users/goran/code/responsive.dev/sass/normalize.sass */
+audio:not([controls]), [hidden] {
+  display: none;
+}
+
+/* line 16, /Users/goran/code/responsive.dev/sass/normalize.sass */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: sans-serif;
+  color: #222222;
+}
+
+/* line 23, /Users/goran/code/responsive.dev/sass/normalize.sass */
+button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222222;
+}
+
+/* line 27, /Users/goran/code/responsive.dev/sass/normalize.sass */
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1;
+}
+
+/* line 32, /Users/goran/code/responsive.dev/sass/normalize.sass */
+p {
+  padding: 7px 0 0 0;
+}
+
+/* line 35, /Users/goran/code/responsive.dev/sass/normalize.sass */
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  padding: 0;
+  color: #444444;
+  margin: 0;
+}
+
+/* line 41, /Users/goran/code/responsive.dev/sass/normalize.sass */
+a {
+  color: #f0610e;
+  text-decoration: none;
+}
+/* line 44, /Users/goran/code/responsive.dev/sass/normalize.sass */
+a:focus, a:hover, a:active {
+  outline: 0;
+}
+
+/* line 47, /Users/goran/code/responsive.dev/sass/normalize.sass */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 50, /Users/goran/code/responsive.dev/sass/normalize.sass */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 53, /Users/goran/code/responsive.dev/sass/normalize.sass */
+.clear {
+  clear: both;
+}
+
+/* line 56, /Users/goran/code/responsive.dev/sass/normalize.sass */
+dfn {
+  font-style: italic;
+}
+
+/* line 59, /Users/goran/code/responsive.dev/sass/normalize.sass */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 67, /Users/goran/code/responsive.dev/sass/normalize.sass */
+ins {
+  background: #ffff99;
+  color: black;
+  text-decoration: none;
+}
+
+/* line 72, /Users/goran/code/responsive.dev/sass/normalize.sass */
+mark {
+  background: yellow;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 78, /Users/goran/code/responsive.dev/sass/normalize.sass */
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/* line 83, /Users/goran/code/responsive.dev/sass/normalize.sass */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 88, /Users/goran/code/responsive.dev/sass/normalize.sass */
+q {
+  quotes: none;
+}
+/* line 90, /Users/goran/code/responsive.dev/sass/normalize.sass */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 94, /Users/goran/code/responsive.dev/sass/normalize.sass */
+small {
+  font-size: 90%;
+}
+
+/* line 97, /Users/goran/code/responsive.dev/sass/normalize.sass */
+blockquote {
+  background-image: url(images/quotes.png), url(images/quotes.png);
+  background-position: -38px 4px, 505px bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+  margin: 10px 0;
+  padding: 10px 30px;
+  border-radius: 3px;
+}
+
+/* line 107, /Users/goran/code/responsive.dev/sass/normalize.sass */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 113, /Users/goran/code/responsive.dev/sass/normalize.sass */
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+/* line 120, /Users/goran/code/responsive.dev/sass/normalize.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 123, /Users/goran/code/responsive.dev/sass/normalize.sass */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 128, /Users/goran/code/responsive.dev/sass/normalize.sass */
+ol {
+  margin: 15px;
+}
+
+/* line 131, /Users/goran/code/responsive.dev/sass/normalize.sass */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 135, /Users/goran/code/responsive.dev/sass/normalize.sass */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 141, /Users/goran/code/responsive.dev/sass/normalize.sass */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* line 146, /Users/goran/code/responsive.dev/sass/normalize.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 149, /Users/goran/code/responsive.dev/sass/normalize.sass */
+figure, form {
+  margin: 0;
+}
+
+/* line 152, /Users/goran/code/responsive.dev/sass/normalize.sass */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 157, /Users/goran/code/responsive.dev/sass/normalize.sass */
+label {
+  cursor: pointer;
+}
+
+/* line 160, /Users/goran/code/responsive.dev/sass/normalize.sass */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 166, /Users/goran/code/responsive.dev/sass/normalize.sass */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 172, /Users/goran/code/responsive.dev/sass/normalize.sass */
+button, input {
+  line-height: normal;
+}
+
+/* line 175, /Users/goran/code/responsive.dev/sass/normalize.sass */
+button {
+  cursor: pointer;
+  -webkit-appearance: none;
+  *overflow: visible;
+}
+
+/* line 181, /Users/goran/code/responsive.dev/sass/normalize.sass */
+input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  *overflow: visible;
+}
+
+/* line 186, /Users/goran/code/responsive.dev/sass/normalize.sass */
+button[disabled] {
+  cursor: default;
+}
+
+/* line 190, /Users/goran/code/responsive.dev/sass/normalize.sass */
+input[disabled] {
+  cursor: default;
+}
+/* line 192, /Users/goran/code/responsive.dev/sass/normalize.sass */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *width: 13px;
+  *height: 13px;
+}
+/* line 197, /Users/goran/code/responsive.dev/sass/normalize.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* line 202, /Users/goran/code/responsive.dev/sass/normalize.sass */
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* line 205, /Users/goran/code/responsive.dev/sass/normalize.sass */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 209, /Users/goran/code/responsive.dev/sass/normalize.sass */
+:focus {
+  outline: 0;
+}
+
+/* line 212, /Users/goran/code/responsive.dev/sass/normalize.sass */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/* line 219, /Users/goran/code/responsive.dev/sass/normalize.sass */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* line 222, /Users/goran/code/responsive.dev/sass/normalize.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 226, /Users/goran/code/responsive.dev/sass/normalize.sass */
+td {
+  vertical-align: top;
+}
+
+/* line 4, ../sass/global.sass */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background: url(../img/bg.png);
+  color: #444444;
+}
+
+/* line 17, ../sass/global.sass */
+body {
+  background: black url(../images/irongrip.png) repeat top left;
+}
+
+/* line 21, ../sass/global.sass */
+#header {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 9999;
+  background-color: #3c3c3c;
+  background-image: -webkit-linear-gradient(top, #3c3c3c, #323232);
+  background-image: -moz-linear-gradient(top, #3c3c3c, #323232);
+  background-image: -ms-linear-gradient(top, #3c3c3c, #323232);
+  background-image: -o-linear-gradient(top, #3c3c3c, #323232);
+  background-image: linear-gradient(top, #3c3c3c, #323232);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+/* line 6, /Users/goran/code/responsive.dev/sass/mixins.sass */
+#header ul {
+  zoom: 1;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  clear: left;
+  float: left;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+/* line 35, /Users/goran/code/responsive.dev/sass/mixins.sass */
+#header ul:before, #header ul:after {
+  content: "";
+  display: table;
+}
+/* line 38, /Users/goran/code/responsive.dev/sass/mixins.sass */
+#header ul:after {
+  clear: both;
+}
+/* line 24, /Users/goran/code/responsive.dev/sass/mixins.sass */
+#header ul li, #header ul dt {
+  float: left;
+  list-style: none outside none;
+  margin: 0 0.2em 1px 0;
+  padding: 0;
+  position: relative;
+  top: 0px;
+}
+/* line 13, /Users/goran/code/responsive.dev/sass/mixins.sass */
+#header ul li {
+  display: block;
+  float: left;
+  position: relative;
+  right: 50%;
+}
+/* line 32, ../sass/global.sass */
+#header ul#device-widths {
+  float: left;
+}
+/* line 34, ../sass/global.sass */
+#header ul#device-widths li {
+  color: #969696;
+  box-shadow: 0 0 3px #222222;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid #464646;
+  border-right: 1px solid #2d2d2d;
+  padding: 13px 10px;
+  width: 60px;
+  display: block;
+  float: left;
+}
+/* line 49, ../sass/global.sass */
+#header ul#device-widths li:first-child {
+  border-left: 1px solid #555555;
+}
+/* line 51, ../sass/global.sass */
+#header ul#device-widths li:hover {
+  color: white;
+}
+/* line 53, ../sass/global.sass */
+#header ul#device-widths li.current, #header ul#device-widths li.active {
+  background-color: #323232;
+  background-image: -webkit-linear-gradient(top, #323232, #3c3c3c);
+  background-image: -moz-linear-gradient(top, #323232, #3c3c3c);
+  background-image: -ms-linear-gradient(top, #323232, #3c3c3c);
+  background-image: -o-linear-gradient(top, #323232, #3c3c3c);
+  background-image: linear-gradient(top, #323232, #3c3c3c);
+  color: white;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.4) inset;
+  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.4) inset;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4) inset;
+}
+
+/* line 58, ../sass/global.sass */
+article {
+  margin: 0 auto;
+  -moz-transition: all 1s;
+  transition: all 1s;
+}
+/* line 63, ../sass/global.sass */
+article iframe::-webkit-scrollbar {
+  display: none;
+}
+/* line 65, ../sass/global.sass */
+article iframe {
+  margin: 0 auto;
+  overflow-y: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-box-shadow: 0 0 40px black;
+  -moz-box-shadow: 0 0 40px black;
+  box-shadow: 0 0 40px black;
+}

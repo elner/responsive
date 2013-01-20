@@ -1,0 +1,89 @@
+=centered-menu
+  float: left
+  width: 100%
+  overflow: hidden
+  position: relative
+  ul
+    +horizontal
+    clear: left
+    float: left
+    position: relative
+    left: 50%
+    text-align: center
+    li
+      display: block
+      float: left
+      position: relative
+      right: 50%
+
+=horizontal
+  +clearfix
+  margin: 0
+  padding: 0
+  text-align: left
+  li, dt
+    float: left
+    list-style: none outside none
+    margin: 0 0.2em 1px 0
+    padding: 0
+    position: relative
+    top: 0px
+
+=clearfix
+  // http://nicolasgallagher.com/micro-clearfix-hack/
+  //For modern browsers
+  &:before, &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+  // For IE 6/7 (trigger hasLayout)
+  zoom: 1
+
+
+//  Usage: Gradient position is optional, default is top. Position can be a degree. Color stops are optional as well.
+//  +linear-gradient(#1e5799, #2989d8)
+//  +linear-gradient(#1e5799, #2989d8, $fallback:#2989d8)
+//  +linear-gradient(top, #1e5799 0%, #2989d8 50%)
+//  +linear-gradient(50deg, rgba(10, 10, 10, 0.5) 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%)
+=linear-gradient($pos, $G1, $G2: false, $G3: false, $G4: false, $G5: false, $G6: false, $G7: false, $G8: false, $G9: false, $G10: false, $fallback: false)
+  // Detect what type of value exists in $pos
+  $pos-type: type-of(nth($pos, 1))
+
+  // If $pos is missing from mixin, reassign vars and add default position
+  @if ($pos-type == color) or (nth($pos, 1) == "transparent")
+    $G10: $G9
+    $G9: $G8
+    $G8: $G7
+    $G7: $G6
+    $G6: $G5
+    $G5: $G4
+    $G4: $G3
+    $G3: $G2
+    $G2: $G1
+    $G1: $pos
+    $pos: top // Default position
+
+
+  $full: compact($G1, $G2, $G3, $G4, $G5, $G6, $G7, $G8, $G9, $G10)
+
+  // Set $G1 as the default fallback color
+  $fallback-color: nth($G1, 1)
+
+  // If $fallback is a color use that color as the fallback color
+  @if (type-of($fallback) == color) or ($fallback == "transparent")
+    $fallback-color: $fallback
+
+  background-color: $fallback-color
+  background-image: -webkit-linear-gradient($pos, $full)
+  background-image: -moz-linear-gradient($pos, $full)
+  background-image: -ms-linear-gradient($pos, $full)
+  background-image: -o-linear-gradient($pos, $full)
+  background-image: unquote("linear-gradient(#{$pos}, #{$full})")
+
+// box-shadow( horizontal-shadow vertical-shadow [blur] [spread] [color] [inset], [shadow-2])
+=box-shadow ($shadow-1,$shadow-2: false, $shadow-3: false,$shadow-4: false, $shadow-5: false,$shadow-6: false, $shadow-7: false,$shadow-8: false, $shadow-9: false)
+  $full: compact($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9)
+  -webkit-box-shadow: $full
+  -moz-box-shadow: $full
+  box-shadow: $full
