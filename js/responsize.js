@@ -1,44 +1,4 @@
 (function($) {
-    $.autoHeight = function(element, options) {
-        var plugin = this;
-
-        plugin.set_height = function() {
-            if($('.height').hasClass('active') == true) return false;
-            var document_height = $(document.body).height() - $("#header").height();
-            if(document_height < $(window).height()){
-                var diff = $(window).height() - $("#header").height();
-                $("#viewport").height(diff);
-                $("body").css('padding-top', $("#header").height());
-            }
-        }
-
-        plugin.init = function() {
-            $(window)
-                .scroll(function() {
-                    plugin.set_height();
-                })
-                .resize(function() {
-                    plugin.set_height();
-                });
-            plugin.set_height();
-        }
-
-        plugin.init();
-        return this;
-    }
-
-    $.fn.autoHeight = function(options) {
-        return this.each(function() {
-            if (undefined == $(this).data('autoHeight')) {
-                var plugin = new $.autoHeight(this, options);
-                $(this).data('autoHeight', plugin);
-            }
-        });
-    }
-
-})(jQuery);
-
-(function($) {
 
     $.responsize = function(element, options) {
 
@@ -63,7 +23,8 @@
             {
                 "title": "iPhone 3+4 portrait 320 x 480",
                 "width": 320,
-                "height": 480}]
+                "height": 480}],
+            btn_width: 70
         };
 
         var plugin = this;
@@ -73,55 +34,124 @@
         var $element = $(element),
              element = element;
 
+        plugin.set_height = function() {
+            if($('.height').hasClass('active') == true) return false;
+            var document_height = $(document.body).height() - $("#header").height();
+            if(document_height < $(window).height()){
+                var diff = $(window).height() - $("#header").height();
+                $("#viewport").height(diff);
+                $("body").css('padding-top', $("#header").height());
+            }
+            plugin.update_info();
+        }
+
+        plugin.update_info = function() {
+            var device_isset = $('ul#device-widths li.current').length;
+            var w = parseInt($('ul#device-widths li.current').data('device-width'));
+            var h = parseInt($('ul#device-widths li.current').data('device-height'));
+            if(device_isset && $('.toggle-height').hasClass('active')){
+                $('.device-info span').html(w+'&times;'+h+'px')
+            }
+             else if(device_isset){
+                $('.device-info span').text(w+'px')
+            }
+            else{
+                $('.device-info span').text($(window).width()+'px')
+            }
+        }
+
         plugin.init = function() {
             plugin.settings = $.extend({}, defaults, options);
-            var header = '<div id="header"><ul id="device-widths"><li class="height">Height off</li><li class="reset">Reset</li><li class="refresh">Refresh</li></ul></div>';
+            var settings = '<div id="settings"><p class="toggle-height"><span>Height off</span></p><form id="site" novalidate="novalidate"><label for="url">http://</label><input type="url" name="url" id="url" placeholder="URL + Enter" autofocus="autofocus" /></form></div>';
+            var header = '<div id="header">'+settings+'<div class="toolbar"><p class="device-info"><span>000</span></p><ul id="device-widths"><li class="reset first"><span>Reset</span></li><!--<li class="refresh">Refresh</li>--></ul><p class="toggle-settings"><span>Settings</span></p></div></div>';
 
             $('body').prepend(header);
 
             $.each(plugin.settings.viewports, function (index, size) {
-                $('ul#device-widths').append('<li class="size-' + size.width + '"' + ' title="'+size.title+'" data-device-width="' + size.width + '" data-device-height="' + size.height + '">' + size.width + 'px</li>');
+                var class_name = '';
+                if(index == (plugin.settings.viewports.length - 1)) class_name = ' last';
+                $('ul#device-widths').append('<li class="size-' + size.width + class_name+'"' + ' title="'+size.title+'" data-device-width="' + size.width + '" data-device-height="' + size.height + '"><span>' + size.width + 'px</span></li>');
                 $('.size-' + size.width + '').click(function () {
                     $('ul#device-widths li').removeClass('current');
+
                     $(this).addClass('current');
                     $('article').animate({
-                        width: "" + (parseInt(size.width) ) + "px" 
+                        width: "" + parseInt(size.width) + "px"
                     }, 300);
-                    if($('.height').hasClass('active')){
+                    if($('.toggle-height').hasClass('active')){
                         $('article').animate({
                         height: "" + (parseInt(size.height)) + "px"
-                    }, 300).css('margin-top', '20px');
+                        }, 300).css('margin-top', '20px');
+                        $('.device-info span').html(size.width+'&times;'+size.height)
                     }
+                    plugin.update_info();
                 });
             });
+                var items_length = plugin.settings.viewports.length + 1;
+                var list_width = (items_length * plugin.settings.btn_width) + (items_length + 1);
+                $('ul#device-widths').css({"width": list_width+"px", "margin-left": "-"+(list_width / 2) +'px'});
+                $('ul#device-widths li').css({"width": plugin.settings.btn_width+"px"});
 
             $('.reset').on('click', function () {
-                $('.height').removeClass('active').text('Height off');
+                $('.height').removeClass('active').find('span').text('Height off');
                 $('ul#device-widths li').removeClass('current');
                 $('article').animate({width : '100%'}).css({'margin-top': '0px'});
-                $('#viewport').data('autoHeight').set_height()
+                $('#viewport').data('autoHeight').set_height();
+                plugin.update_info();
             });
 
-            $('.height').on('click', function () {
+            $('form#site').submit(function(e) {
+              $('#viewport iframe')
+                .attr('src', 'http://'+$('#url').val())
+                .load(function() {
+                    $('#settings').slideUp(300, function(){
+                        plugin.set_height();
+                    });
+                });
+               e.preventDefault();
+            });
+
+            if($('#viewport iframe').attr('src').length == 0){
+                $('#settings').slideToggle(300);
+                $(this).toggleClass('active');
+            }
+
+            $('.toggle-settings').on('click', function () {
+                $('#settings').slideToggle(300);
+                $(this).toggleClass('active');
+            });
+
+            $('.toggle-height').on('click', function () {
                 if($(this).hasClass('active') == 1){
-                    $(this).removeClass('active').text('Height off');
+                    $(this).removeClass('active').find('span').text('Height off');
                     $('article').css({'margin-top': '0px'});
-                    $('#viewport').data('autoHeight').set_height()
+                    $('#viewport').data('autoHeight').set_height();
                 }
                 else {
-                    $(this).addClass('active').text('Height on');
+                    $(this).addClass('active').find('span').text('Height on');
                     var h = parseInt($('ul#device-widths li.current').data('device-height'));
                      $('article').animate({
                         height: h + "px"
                     }, 300).css('margin-top', '20px');
                 }
+                plugin.update_info();
             });    
 
-            $("#viewport").autoHeight();
-
+            /*
             $('.refresh').click(function () {
                $('#viewport iframe',window.parent.document).attr('src',$('#viewport iframe',window.parent.document).attr('src'));
             });
+            */
+            plugin.update_info();
+
+            $(window)
+                .scroll(function() {
+                    plugin.set_height();
+                })
+                .resize(function() {
+                    plugin.set_height();
+                });
+            plugin.set_height();
         }
 
         plugin.init();
@@ -129,14 +159,11 @@
     }
 
     $.fn.responsize = function(options) {
-
         return this.each(function() {
             if (undefined == $(this).data('responsize')) {
                 var plugin = new $.responsize(this, options);
                 $(this).data('responsize', plugin);
             }
         });
-
     }
-
 })(jQuery);

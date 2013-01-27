@@ -9,7 +9,7 @@
 </head>
   <body>
     <article id="viewport">
-      <iframe src="<?php echo isset($_GET["url"]) ? 'http://' . $_GET['url'] : 'http://trentwalton.com'; ?>"></iframe>
+      <iframe id="mainContent" src="<?php echo isset($_GET["url"]) ? 'http://' . $_GET['url'] : ''; ?>"></iframe>
     </article>
     <script>
       $(function() {

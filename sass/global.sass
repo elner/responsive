@@ -11,7 +11,7 @@ body
   font-smoothing: antialiased
   text-rendering: optimizeLegibility
   background: url(../img/bg.png)
-  color: #444
+  color: rgb(150,150,150)
 
 
 body
@@ -19,38 +19,139 @@ body
   background: #000 url(../images/irongrip.png) repeat top left
 
 #header
-  +centered-menu
+  //+centered-menu
+  //background: black url(../images/dark-noise.jpg) repeat left top
   position: absolute
   top: 0
   left: 0
   right: 0
   overflow: hidden
   z-index: 9999
-  +linear-gradient(rgb(60,60,60), rgb(50,50,50))
   +box-shadow(0 5px 10px rgba(0,0,0,.3))
+  background-color: rgb(55,55,55)
+  #settings
+    display: none
+    width: 429px
+    margin: 0 auto 5px auto
+    padding: 6px 0
+    min-height: 34px
+    form 
+      margin: 0 0 0 6px
+      padding: 0
+      position: relative
+      float: left
+      width: 300px
+      label
+        position: absolute
+        line-height: 34px
+        font-weight: bold
+        text-transform: uppercase
+        color: white
+        text-shadow: 0 -1px 0 rgba(0,0,0,.5)
+        padding: 0 6px
+        top: 2px
+        left: 2px
+        height: 32px
+        +box-shadow(0 1px 1px rgba(220,220,220,.8) inset, 0 -1px 0px rgba(70,70,70,.8) inset)
+        +border-radius(5px 0 0 5px)
+        +linear-gradient(rgb(122,122,122), rgb(94,94,94))
+      input[type="url"]
+        background-color: black
+        border-style: none
+        height: 34px
+        +border-radius(7px)
+        width: 100%
+        padding: 0
+        text-indent: 60px
+        color: rgb(220,220,220)
+        border: 1px solid rgb(80,80,80)
+        border-top-color: rgb(70,70,70)
 
-  ul#device-widths
+  .toolbar
+    position: relative
+    +linear-gradient(rgb(60,60,60), rgb(40,40,40))
+    +box-shadow(0 1px 0px rgba(70,70,70,1) inset, 0 -1px 0px rgba(40,40,40,1))
+    padding: 6px 0
+  .toggle-height,
+  .toggle-settings
+    cursor: pointer
+    border: 1px solid rgb(80,80,80)
+    border-top-color: rgb(70,70,70)
+    +border-radius(7px)
+    margin: 0
+    padding: 0
+    font-size: 12px
+    line-height: 12px
+    text-align: center
+    span
+      display: block
+      padding-top: 10px
+      padding-bottom: 10px
+      
+      border: 1px solid rgb(40,40,40)
+      +box-shadow(0 1px 0px rgba(70,70,70,1) inset)
+      +border-radius(7px)
+    &.active
+      +linear-gradient(rgb(50,50,50), rgb(60,60,60))
+      color: rgb(255,255,255)
+      +box-shadow(0 0 30px rgba(0,0,0,.4) inset)
+      span
+        +box-shadow(none)
+  .toggle-height
+    width: 70px
     float: left
+  .device-info
+    position: absolute
+    bottom: 4px
+    left: 20px
+    width: 40px
+    span
+ 
+  .toggle-settings
+    position: absolute
+    bottom: 4px
+    right: 20px
+    width: 40px
+    span
+      text-indent: -9999px
+  ul#device-widths
+    +clearfix
+    position: relative
+    //z-index: 9999
+    left: 50%
+    //display: block
+    border: 1px solid rgb(75,75,75)
+    border-top-color: rgb(65,65,65)
+    +border-radius(7px)
     li
       color: rgb(150,150,150)
-      box-shadow: 0 0 3px #222
+      border: 1px solid rgb(40,40,40)
+      border-right-style: none
+      +box-shadow(0 1px 0px rgba(70,70,70,1) inset)
       cursor: pointer
       font-size: 12px
       line-height: 12px
       text-align: center
       margin: 0
       padding: 0
-      border-left: 1px solid rgb(70,70,70)
-      border-right: 1px solid rgb(45,45,45)
-      padding: 13px 10px
-      width: 60px
+      //border-left: 1px solid rgb(70,70,70)
+      //border-right: 1px solid rgb(45,45,45)
+      //padding: 13px 10px
+      //width: 60px
       display: block
       float: left
-      &:first-child
-        border-left: 1px solid #555
+      span 
+        display: block
+        padding-top: 10px
+        padding-bottom: 10px
+      &.first
+        +border-radius(7px 0 0 7px)
+      &.last
+        +border-radius(0 7px 7px 0)
+        border-right: 1px solid rgb(40,40,40)
       &:hover
         color: rgb(255,255,255)
-      &.current, &.active
+      &.current, &.active, &:active
         +linear-gradient(rgb(50,50,50), rgb(60,60,60))
         color: rgb(255,255,255)
         +box-shadow(0 0 30px rgba(0,0,0,.4) inset)

@@ -1,3 +1,26 @@
+=placeholder
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder,
+  input::-ms-input-placeholder
+    @content
+
+  input:-moz-placeholder,
+  textarea:-moz-placeholder
+    @content
+
+=border-radius($properties)
+  @if length($properties) > 1
+    border-top-left-radius: nth($properties, 1)
+    border-top-right-radius: nth($properties, 2)
+    border-bottom-right-radius: nth($properties, 3)
+    border-bottom-left-radius: nth($properties, 4)
+  @else
+    border-top-left-radius: $properties
+    border-top-right-radius: $properties
+    border-bottom-right-radius: $properties
+    border-bottom-left-radius: $properties
+
+
 =centered-menu
   float: left
   width: 100%

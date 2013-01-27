@@ -1,21 +1,21 @@
-/* line 5, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 5, ../sass/_normalize.sass */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
 
-/* line 8, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 8, ../sass/_normalize.sass */
 audio, canvas, video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
 }
 
-/* line 13, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 13, ../sass/_normalize.sass */
 audio:not([controls]), [hidden] {
   display: none;
 }
 
-/* line 16, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 16, ../sass/_normalize.sass */
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -24,25 +24,25 @@ html {
   color: #222222;
 }
 
-/* line 23, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 23, ../sass/_normalize.sass */
 button, input, select, textarea {
   font-family: sans-serif;
   color: #222222;
 }
 
-/* line 27, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 27, ../sass/_normalize.sass */
 body {
   margin: 0;
   font-size: 1em;
   line-height: 1;
 }
 
-/* line 32, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 32, ../sass/_normalize.sass */
 p {
   padding: 7px 0 0 0;
 }
 
-/* line 35, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 35, ../sass/_normalize.sass */
 h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   padding: 0;
@@ -50,37 +50,37 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-/* line 41, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 41, ../sass/_normalize.sass */
 a {
   color: #f0610e;
   text-decoration: none;
 }
-/* line 44, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 44, ../sass/_normalize.sass */
 a:focus, a:hover, a:active {
   outline: 0;
 }
 
-/* line 47, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 47, ../sass/_normalize.sass */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 50, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 50, ../sass/_normalize.sass */
 b, strong {
   font-weight: bold;
 }
 
-/* line 53, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 53, ../sass/_normalize.sass */
 .clear {
   clear: both;
 }
 
-/* line 56, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 56, ../sass/_normalize.sass */
 dfn {
   font-style: italic;
 }
 
-/* line 59, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 59, ../sass/_normalize.sass */
 hr {
   display: block;
   height: 1px;
@@ -90,14 +90,14 @@ hr {
   padding: 0;
 }
 
-/* line 67, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 67, ../sass/_normalize.sass */
 ins {
   background: #ffff99;
   color: black;
   text-decoration: none;
 }
 
-/* line 72, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 72, ../sass/_normalize.sass */
 mark {
   background: yellow;
   color: black;
@@ -105,36 +105,36 @@ mark {
   font-weight: bold;
 }
 
-/* line 78, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 78, ../sass/_normalize.sass */
 pre, code, kbd, samp {
   font-family: monospace, serif;
   _font-family: "courier new", monospace;
   font-size: 1em;
 }
 
-/* line 83, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 83, ../sass/_normalize.sass */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 88, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 88, ../sass/_normalize.sass */
 q {
   quotes: none;
 }
-/* line 90, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 90, ../sass/_normalize.sass */
 q:before, q:after {
   content: "";
   content: none;
 }
 
-/* line 94, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 94, ../sass/_normalize.sass */
 small {
   font-size: 90%;
 }
 
-/* line 97, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 97, ../sass/_normalize.sass */
 blockquote {
   background-image: url(images/quotes.png), url(images/quotes.png);
   background-position: -38px 4px, 505px bottom;
@@ -146,7 +146,7 @@ blockquote {
   border-radius: 3px;
 }
 
-/* line 107, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 107, ../sass/_normalize.sass */
 sub {
   font-size: 75%;
   line-height: 0;
@@ -154,7 +154,7 @@ sub {
   vertical-align: baseline;
 }
 
-/* line 113, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 113, ../sass/_normalize.sass */
 sup {
   font-size: 75%;
   line-height: 0;
@@ -163,29 +163,29 @@ sup {
   top: -0.5em;
 }
 
-/* line 120, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 120, ../sass/_normalize.sass */
 sub {
   bottom: -0.25em;
 }
 
-/* line 123, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 123, ../sass/_normalize.sass */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 128, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 128, ../sass/_normalize.sass */
 ol {
   margin: 15px;
 }
 
-/* line 131, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 131, ../sass/_normalize.sass */
 dd {
   margin: 0 0 0 40px;
 }
 
-/* line 135, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 135, ../sass/_normalize.sass */
 nav ul, nav ol {
   list-style: none;
   list-style-image: none;
@@ -193,36 +193,36 @@ nav ul, nav ol {
   padding: 0;
 }
 
-/* line 141, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 141, ../sass/_normalize.sass */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
 }
 
-/* line 146, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 146, ../sass/_normalize.sass */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 149, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 149, ../sass/_normalize.sass */
 figure, form {
   margin: 0;
 }
 
-/* line 152, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 152, ../sass/_normalize.sass */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 157, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 157, ../sass/_normalize.sass */
 label {
   cursor: pointer;
 }
 
-/* line 160, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 160, ../sass/_normalize.sass */
 legend {
   border: 0;
   *margin-left: -7px;
@@ -230,7 +230,7 @@ legend {
   white-space: normal;
 }
 
-/* line 166, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 166, ../sass/_normalize.sass */
 button, input, select, textarea {
   font-size: 100%;
   margin: 0;
@@ -238,83 +238,83 @@ button, input, select, textarea {
   *vertical-align: middle;
 }
 
-/* line 172, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 172, ../sass/_normalize.sass */
 button, input {
   line-height: normal;
 }
 
-/* line 175, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 175, ../sass/_normalize.sass */
 button {
   cursor: pointer;
   -webkit-appearance: none;
   *overflow: visible;
 }
 
-/* line 181, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 181, ../sass/_normalize.sass */
 input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: none;
   *overflow: visible;
 }
 
-/* line 186, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 186, ../sass/_normalize.sass */
 button[disabled] {
   cursor: default;
 }
 
-/* line 190, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 190, ../sass/_normalize.sass */
 input[disabled] {
   cursor: default;
 }
-/* line 192, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 192, ../sass/_normalize.sass */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
   *width: 13px;
   *height: 13px;
 }
-/* line 197, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 197, ../sass/_normalize.sass */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
-/* line 202, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 202, ../sass/_normalize.sass */
 input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/* line 205, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 205, ../sass/_normalize.sass */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 209, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 209, ../sass/_normalize.sass */
 :focus {
   outline: 0;
 }
 
-/* line 212, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 212, ../sass/_normalize.sass */
 textarea {
   overflow: auto;
   vertical-align: top;
   resize: vertical;
 }
 
-/* line 219, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 219, ../sass/_normalize.sass */
 input:invalid, textarea:invalid {
   background-color: #f0dddd;
 }
 
-/* line 222, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 222, ../sass/_normalize.sass */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 226, /Users/goran/code/responsive.dev/sass/normalize.sass */
+/* line 226, ../sass/_normalize.sass */
 td {
   vertical-align: top;
 }
@@ -330,7 +330,7 @@ body {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   background: url(../img/bg.png);
-  color: #444444;
+  color: #969696;
 }
 
 /* line 17, ../sass/global.sass */
@@ -340,94 +340,229 @@ body {
 
 /* line 21, ../sass/global.sass */
 #header {
-  float: left;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   overflow: hidden;
   z-index: 9999;
-  background-color: #3c3c3c;
-  background-image: -webkit-linear-gradient(top, #3c3c3c, #323232);
-  background-image: -moz-linear-gradient(top, #3c3c3c, #323232);
-  background-image: -ms-linear-gradient(top, #3c3c3c, #323232);
-  background-image: -o-linear-gradient(top, #3c3c3c, #323232);
-  background-image: linear-gradient(top, #3c3c3c, #323232);
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  background-color: #373737;
 }
-/* line 6, /Users/goran/code/responsive.dev/sass/mixins.sass */
-#header ul {
-  zoom: 1;
+/* line 32, ../sass/global.sass */
+#header #settings {
+  display: none;
+  width: 429px;
+  margin: 0 auto 5px auto;
+  padding: 6px 0;
+  min-height: 34px;
+}
+/* line 38, ../sass/global.sass */
+#header #settings form {
+  margin: 0 0 0 6px;
+  padding: 0;
+  position: relative;
+  float: left;
+  width: 300px;
+}
+/* line 44, ../sass/global.sass */
+#header #settings form label {
+  position: absolute;
+  line-height: 34px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  padding: 0 6px;
+  top: 2px;
+  left: 2px;
+  height: 32px;
+  -webkit-box-shadow: 0 1px 1px rgba(220, 220, 220, 0.8) inset, 0 -1px 0px rgba(70, 70, 70, 0.8) inset;
+  -moz-box-shadow: 0 1px 1px rgba(220, 220, 220, 0.8) inset, 0 -1px 0px rgba(70, 70, 70, 0.8) inset;
+  box-shadow: 0 1px 1px rgba(220, 220, 220, 0.8) inset, 0 -1px 0px rgba(70, 70, 70, 0.8) inset;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 5px;
+  background-color: #7a7a7a;
+  background-image: -webkit-linear-gradient(top, #7a7a7a, #5e5e5e);
+  background-image: -moz-linear-gradient(top, #7a7a7a, #5e5e5e);
+  background-image: -ms-linear-gradient(top, #7a7a7a, #5e5e5e);
+  background-image: -o-linear-gradient(top, #7a7a7a, #5e5e5e);
+  background-image: linear-gradient(top, #7a7a7a, #5e5e5e);
+}
+/* line 58, ../sass/global.sass */
+#header #settings form input[type="url"] {
+  background-color: black;
+  border-style: none;
+  height: 34px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  width: 100%;
+  padding: 0;
+  text-indent: 60px;
+  color: gainsboro;
+  border: 1px solid #505050;
+  border-top-color: #464646;
+}
+/* line 70, ../sass/global.sass */
+#header .toolbar {
+  position: relative;
+  background-color: #3c3c3c;
+  background-image: -webkit-linear-gradient(top, #3c3c3c, #282828);
+  background-image: -moz-linear-gradient(top, #3c3c3c, #282828);
+  background-image: -ms-linear-gradient(top, #3c3c3c, #282828);
+  background-image: -o-linear-gradient(top, #3c3c3c, #282828);
+  background-image: linear-gradient(top, #3c3c3c, #282828);
+  -webkit-box-shadow: 0 1px 0px #464646 inset, 0 -1px 0px #282828;
+  -moz-box-shadow: 0 1px 0px #464646 inset, 0 -1px 0px #282828;
+  box-shadow: 0 1px 0px #464646 inset, 0 -1px 0px #282828;
+  padding: 6px 0;
+}
+/* line 75, ../sass/global.sass */
+#header .toggle-height,
+#header .toggle-settings {
+  cursor: pointer;
+  border: 1px solid #505050;
+  border-top-color: #464646;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
   margin: 0;
   padding: 0;
-  text-align: left;
-  clear: left;
-  float: left;
-  position: relative;
-  left: 50%;
+  font-size: 12px;
+  line-height: 12px;
   text-align: center;
 }
-/* line 35, /Users/goran/code/responsive.dev/sass/mixins.sass */
-#header ul:before, #header ul:after {
+/* line 86, ../sass/global.sass */
+#header .toggle-height span,
+#header .toggle-settings span {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #282828;
+  -webkit-box-shadow: 0 1px 0px #464646 inset;
+  -moz-box-shadow: 0 1px 0px #464646 inset;
+  box-shadow: 0 1px 0px #464646 inset;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+/* line 94, ../sass/global.sass */
+#header .toggle-height.active,
+#header .toggle-settings.active {
+  background-color: #323232;
+  background-image: -webkit-linear-gradient(top, #323232, #3c3c3c);
+  background-image: -moz-linear-gradient(top, #323232, #3c3c3c);
+  background-image: -ms-linear-gradient(top, #323232, #3c3c3c);
+  background-image: -o-linear-gradient(top, #323232, #3c3c3c);
+  background-image: linear-gradient(top, #323232, #3c3c3c);
+  color: white;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.4) inset;
+  -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.4) inset;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4) inset;
+}
+/* line 98, ../sass/global.sass */
+#header .toggle-height.active span,
+#header .toggle-settings.active span {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 100, ../sass/global.sass */
+#header .toggle-height {
+  width: 70px;
+  float: left;
+}
+/* line 103, ../sass/global.sass */
+#header .device-info {
+  position: absolute;
+  bottom: 4px;
+  left: 20px;
+  width: 40px;
+}
+/* line 110, ../sass/global.sass */
+#header .toggle-settings {
+  position: absolute;
+  bottom: 4px;
+  right: 20px;
+  width: 40px;
+}
+/* line 115, ../sass/global.sass */
+#header .toggle-settings span {
+  text-indent: -9999px;
+}
+/* line 117, ../sass/global.sass */
+#header ul#device-widths {
+  zoom: 1;
+  position: relative;
+  left: 50%;
+  border: 1px solid #4b4b4b;
+  border-top-color: #414141;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+/* line 58, ../sass/_mixins.sass */
+#header ul#device-widths:before, #header ul#device-widths:after {
   content: "";
   display: table;
 }
-/* line 38, /Users/goran/code/responsive.dev/sass/mixins.sass */
-#header ul:after {
+/* line 61, ../sass/_mixins.sass */
+#header ul#device-widths:after {
   clear: both;
 }
-/* line 24, /Users/goran/code/responsive.dev/sass/mixins.sass */
-#header ul li, #header ul dt {
-  float: left;
-  list-style: none outside none;
-  margin: 0 0.2em 1px 0;
-  padding: 0;
-  position: relative;
-  top: 0px;
-}
-/* line 13, /Users/goran/code/responsive.dev/sass/mixins.sass */
-#header ul li {
-  display: block;
-  float: left;
-  position: relative;
-  right: 50%;
-}
-/* line 32, ../sass/global.sass */
-#header ul#device-widths {
-  float: left;
-}
-/* line 34, ../sass/global.sass */
+/* line 126, ../sass/global.sass */
 #header ul#device-widths li {
   color: #969696;
-  box-shadow: 0 0 3px #222222;
+  border: 1px solid #282828;
+  border-right-style: none;
+  -webkit-box-shadow: 0 1px 0px #464646 inset;
+  -moz-box-shadow: 0 1px 0px #464646 inset;
+  box-shadow: 0 1px 0px #464646 inset;
   cursor: pointer;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   margin: 0;
   padding: 0;
-  border-left: 1px solid #464646;
-  border-right: 1px solid #2d2d2d;
-  padding: 13px 10px;
-  width: 60px;
   display: block;
   float: left;
 }
-/* line 49, ../sass/global.sass */
-#header ul#device-widths li:first-child {
-  border-left: 1px solid #555555;
+/* line 143, ../sass/global.sass */
+#header ul#device-widths li span {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-/* line 51, ../sass/global.sass */
+/* line 147, ../sass/global.sass */
+#header ul#device-widths li.first {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 7px;
+}
+/* line 149, ../sass/global.sass */
+#header ul#device-widths li.last {
+  border-top-left-radius: 0;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 0;
+  border-right: 1px solid #282828;
+}
+/* line 152, ../sass/global.sass */
 #header ul#device-widths li:hover {
   color: white;
 }
-/* line 53, ../sass/global.sass */
-#header ul#device-widths li.current, #header ul#device-widths li.active {
+/* line 154, ../sass/global.sass */
+#header ul#device-widths li.current, #header ul#device-widths li.active, #header ul#device-widths li:active {
   background-color: #323232;
   background-image: -webkit-linear-gradient(top, #323232, #3c3c3c);
   background-image: -moz-linear-gradient(top, #323232, #3c3c3c);
@@ -440,17 +575,17 @@ body {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.4) inset;
 }
 
-/* line 58, ../sass/global.sass */
+/* line 159, ../sass/global.sass */
 article {
   margin: 0 auto;
   -moz-transition: all 1s;
   transition: all 1s;
 }
-/* line 63, ../sass/global.sass */
+/* line 164, ../sass/global.sass */
 article iframe::-webkit-scrollbar {
   display: none;
 }
-/* line 65, ../sass/global.sass */
+/* line 166, ../sass/global.sass */
 article iframe {
   margin: 0 auto;
   overflow-y: hidden;
