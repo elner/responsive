@@ -82,24 +82,25 @@
                         $('article').animate({
                         height: "" + (parseInt(size.height)) + "px"
                         }, 300).css('margin-top', '20px');
-                        $('.device-info span').html(size.width+'&times;'+size.height)
                     }
                     plugin.update_info();
                 });
             });
-                var items_length = plugin.settings.viewports.length + 1;
-                var list_width = (items_length * plugin.settings.btn_width) + (items_length + 1);
-                $('ul#device-widths').css({"width": list_width+"px", "margin-left": "-"+(list_width / 2) +'px'});
-                $('ul#device-widths li').css({"width": plugin.settings.btn_width+"px"});
 
+            var items_length = plugin.settings.viewports.length + 1;
+            var list_width = (items_length * plugin.settings.btn_width) + (items_length + 1);
+            $('ul#device-widths').css({"width": list_width+"px", "margin-left": "-"+(list_width / 2) +'px'});
+            $('ul#device-widths li').css({"width": plugin.settings.btn_width+"px"});
+
+            // Set auto width & height
             $('.reset').on('click', function () {
                 $('.height').removeClass('active').find('span').text('Height off');
                 $('ul#device-widths li').removeClass('current');
                 $('article').animate({width : '100%'}).css({'margin-top': '0px'});
-                $('#viewport').data('autoHeight').set_height();
-                plugin.update_info();
+                plugin.set_height();
             });
 
+            // Set test url
             $('form#site').submit(function(e) {
               $('#viewport iframe')
                 .attr('src', 'http://'+$('#url').val())
@@ -116,11 +117,13 @@
                 $(this).toggleClass('active');
             }
 
+            // Show/hide settings
             $('.toggle-settings').on('click', function () {
                 $('#settings').slideToggle(300);
                 $(this).toggleClass('active');
             });
 
+            // Toggle Device height
             $('.toggle-height').on('click', function () {
                 if($(this).hasClass('active') == 1){
                     $(this).removeClass('active').find('span').text('Height off');
